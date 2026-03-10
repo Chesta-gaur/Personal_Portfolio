@@ -1,7 +1,7 @@
 :root {
   /* BACKGROUNDS */
   --bg-section: #0f172a;
-  --bg-card: #1e293b;
+  --bg-card: #b3bac4;
 
   /* PRIMARY COLORS */
   --primary: #2563eb;
@@ -22,8 +22,31 @@
   /* BORDERS */
   --border-color: #e4e6e9;
   --border-soft: #1e293b;
+}
 
-  /* BUTTONS */
-  /* --btn-primary: #f97316;
-  --btn-hover: #1d4ed8; */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-bottom: 80px;
+}
+
+.title-box {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title-box .subtitle {
+  color: var(--text-muted);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.title-box .title {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0;
 }
