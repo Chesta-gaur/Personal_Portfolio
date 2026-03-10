@@ -1,0 +1,30 @@
+:root {
+  /* BACKGROUNDS */
+  --bg-section: #0f172a;
+  --bg-card: #1e293b;
+
+  /* PRIMARY COLORS */
+  --primary: #2563eb;
+  --primary-light: #3b82f6;
+  --primary-dark: #1d4ed8;
+
+  /* ACCENTS */
+  --accent: #6366f1;
+  --accent-light: #818cf8;
+
+  /* TEXT COLORS */
+  --text-main: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-white: #fff;
+  --text-black: #000;
+  --text-muted: #64748b;
+
+  /* BORDERS */
+  --border-color: #334155;
+  --border-soft: #1e293b;
+
+  /* BUTTONS */
+  /* --btn-primary: #f97316;
+  --btn-hover: #1d4ed8; */
+}
+
