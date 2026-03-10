@@ -48,7 +48,7 @@ export default function Navbar() {
               </li>
             </ul>
 
-            <button className="btn hire-btn btn-shadow">Hire Me</button>
+            <button className="btn hire-btn">Hire Me</button>
           </div>
         </div>
       </nav>

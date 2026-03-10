@@ -1,0 +1,158 @@
+.home-section {
+  min-height: 100vh;
+  padding-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LEFT IMAGE */
+
+.hero-left {
+  animation: fadeUp 2s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-text {
+  font-size: 18px;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.hero-name {
+  font-size: 55px;
+  font-weight: 700;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--text-main);
+}
+
+.hero-role {
+  font-size: 25px;
+  font-weight: 600;
+  min-height: 40px;
+  background: linear-gradient(135deg, #3278a9, #1361aa, #1e5aca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.typed-cursor {
+  font-size: 30px;
+  color: var(--accent);
+}
+
+.hero-desc {
+  max-width: 520px;
+  text-align: justify;
+  font-size: 16px;
+  color: var(--text-main);
+  margin: 10px 0;
+  line-height: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  max-width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.hero-btn {
+  border: 1px solid var(--border-color);
+  outline: none;
+  background: transparent;
+  border-radius: 14px 16px;
+  color: var(--text-white);
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+.hero-btn:hover {
+  background: linear-gradient(135deg, #bd2de9, #ec46e9, #fc21c5);
+  color: var(--text-white);
+  border: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(252, 33, 197, 0.35);
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 150px;
+  margin-top: 20px;
+}
+
+.social-media a {
+  font-size: 30px;
+  color: var(--text-white);
+  transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+  color: var(--primary);
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* RIGHT IMAGE */
+
+.hero-img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-img-container::before {
+  content: "";
+  width: 420px;
+  height: 420px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(189, 45, 233, 0.45),
+    rgba(37, 99, 235, 0.35),
+    transparent 70%
+  );
+  filter: blur(60px);
+  z-index: -1;
+}
+
+.hero-img {
+  position: relative;
+  z-index: 2;
+  max-width: 320px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

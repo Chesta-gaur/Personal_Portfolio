@@ -9,7 +9,7 @@
   --primary-dark: #1d4ed8;
 
   /* ACCENTS */
-  --accent: #6366f1;
+  --accent: #3335a3;
   --accent-light: #818cf8;
 
   /* TEXT COLORS */
@@ -20,11 +20,10 @@
   --text-muted: #64748b;
 
   /* BORDERS */
-  --border-color: #334155;
+  --border-color: #e4e6e9;
   --border-soft: #1e293b;
 
   /* BUTTONS */
   /* --btn-primary: #f97316;
   --btn-hover: #1d4ed8; */
 }
-

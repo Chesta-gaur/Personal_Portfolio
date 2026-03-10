@@ -55,7 +55,7 @@
   transition: all 0.3s linear;
 }
 
-.btn-shadow:hover {
+.hire-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(252, 33, 197, 0.35);
 }
