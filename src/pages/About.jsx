@@ -15,7 +15,7 @@ export default function About() {
         </div>
 
         {/* INTRO PARAGRAPH */}
-        <div className="intro-para">
+        <div className="intro-para" data-aos="fade-up">
           <p>
             I am a Computer Science Engineering graduate passionate about
             backend development and building scalable applications. I enjoy
@@ -28,7 +28,7 @@ export default function About() {
 
         <div className="row align-items-center">
           {/* LEFT CONTENT */}
-          <div className="col-md-6">
+          <div className="col-md-6" data-aos="fade-left">
             {aboutFeatures.map((feature, index) => (
               <FeatureCard
                 key={index}

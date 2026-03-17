@@ -15,7 +15,7 @@ export default function Projects() {
         {/* PROJECTS */}
         <div className="row g-4">
           {projectData.map((project) => (
-            <div className="col-md-4" key={project.id}>
+            <div className="col-md-4" key={project.id} data-aos="fade-up">
               <ProjectCard
                 image={project.image}
                 name={project.name}

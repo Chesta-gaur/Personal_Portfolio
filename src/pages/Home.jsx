@@ -10,7 +10,7 @@ export default function Home() {
         <div className="row align-items-center">
           {/* LEFT CONTENT (SHORT INTRO) */}
 
-          <div className="hero-left col-md-6">
+          <div className="hero-left col-md-6" data-aos="fade-right">
             <p className="intro-text">Hi, I'm</p>
             <h1 className="hero-name">Chesta Gaur</h1>
             <h3 className="hero-role">
@@ -34,9 +34,19 @@ export default function Home() {
               architecture, and data-driven applications.
             </p>
             <div className="hero-buttons">
-              <button className="btn hero-btn">Download Resume</button>
+              <button
+                className="btn hero-btn"
+                onClick={() => window.open("/resume.pdf")}
+              >
+                Download Resume
+              </button>
 
-              <button className="btn hero-btn">Contact Me</button>
+              <button
+                className="btn hero-btn"
+                onClick={() => (window.location.href = "#contact")}
+              >
+                Contact Me
+              </button>
             </div>
 
             <div className="social-media">
@@ -65,7 +75,7 @@ export default function Home() {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="col-md-6 text-center">
+          <div className="col-md-6 text-center" data-aos="fade-left">
             <div className="hero-img-container">
               <img className="hero-img" src={profile} alt="profile" />
             </div>

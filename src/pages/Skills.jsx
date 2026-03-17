@@ -15,7 +15,11 @@ export default function Skills() {
         {/* SKILLS */}
         <div className="row g-4">
           {aboutSkills.map((skill) => (
-            <div className="col-sm-6 col-md-4 col-lg-3" key={skill.id}>
+            <div
+              className="col-sm-6 col-md-4 col-lg-3"
+              key={skill.id}
+              data-aos="zoom-in"
+            >
               <SkillCard
                 icon={skill.icon}
                 name={skill.name}

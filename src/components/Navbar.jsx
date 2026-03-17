@@ -47,7 +47,12 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <button className="btn hire-btn">Let's Connect</button>
+          <button
+            className="btn hire-btn"
+            onClick={() => (window.location.href = "#contact")}
+          >
+            Let's Connect
+          </button>
         </div>
       </div>
     </nav>

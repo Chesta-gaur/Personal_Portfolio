@@ -6,23 +6,7 @@
   align-items: center;
 }
 
-/* LEFT IMAGE */
-
-.hero-left {
-  animation: fadeUp 2s ease;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* LEFT Intro */
 .intro-text {
   font-size: 18px;
   color: var(--text-main);
@@ -32,9 +16,7 @@
 .hero-name {
   font-size: 55px;
   font-weight: 700;
-  font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--text-main);
 }
 
@@ -42,7 +24,7 @@
   font-size: 25px;
   font-weight: 600;
   min-height: 40px;
-  background: linear-gradient(135deg, #3278a9, #1361aa, #1e5aca);
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,47 +47,53 @@
 
 .hero-buttons {
   display: flex;
-  max-width: 300px;
-  justify-content: space-between;
-  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
   margin-top: 25px;
 }
 
 .hero-btn {
-  border: 1px solid var(--border-color);
-  outline: none;
-  background: transparent;
-  border-radius: 14px 16px;
+  padding: 8px 16px;
+  border-radius: 10px;
   color: var(--text-white);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
   font-weight: 600;
-  transition: all 0.3s linear;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-  background: linear-gradient(135deg, #bd2de9, #ec46e9, #fc21c5);
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
   color: var(--text-white);
   border: none;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(252, 33, 197, 0.35);
+  box-shadow: 0 6px 25px rgba(236, 72, 153, 0.35);
 }
 
 .social-media {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 150px;
+  gap: 15px;
   margin-top: 20px;
 }
 
 .social-media a {
   font-size: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-white);
   transition: all 0.3s ease;
 }
 
 .social-media a:hover {
   color: var(--primary);
-  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 0 12px var(--primary);
 }
 
 /* RIGHT IMAGE */
@@ -129,7 +117,8 @@
     rgba(37, 99, 235, 0.35),
     transparent 70%
   );
-  filter: blur(60px);
+  filter: blur(80px);
+  opacity: 0.8;
   z-index: -1;
 }
 
