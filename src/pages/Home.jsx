@@ -10,10 +10,14 @@ export default function Home() {
         <div className="row align-items-center">
           {/* LEFT CONTENT (SHORT INTRO) */}
 
-          <div className="hero-left col-md-6" data-aos="fade-right">
-            <p className="intro-text">Hi, I'm</p>
-            <h1 className="hero-name">Chesta Gaur</h1>
-            <h3 className="hero-role">
+          <div className="hero-left col-md-6">
+            <p className="intro-text" data-aos="fade-up" data-aos-delay="100">
+              Hi, I'm
+            </p>
+            <h1 className="hero-name" data-aos="fade-up" data-aos-delay="200">
+              Chesta Gaur
+            </h1>
+            <h3 className="hero-role" data-aos="fade-up" data-aos-delay="300">
               <ReactTyped
                 strings={[
                   "Frontend Developer",
@@ -27,19 +31,20 @@ export default function Home() {
                 loop
               />
             </h3>
-            <p className="hero-desc">
+            <p className="hero-desc" data-aos="fade-up" data-aos-delay="400">
               I build scalable backend systems and REST APIs using Python and
               FastAPI, and develop modern web interfaces with React. Passionate
               about solving real-world problems through clean code, efficient
               architecture, and data-driven applications.
             </p>
-            <div className="hero-buttons">
-              <button
-                className="btn hero-btn"
-                onClick={() => window.open("/resume.pdf")}
-              >
-                Download Resume
-              </button>
+            <div
+              className="hero-buttons"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <a href="/resume.pdf" download>
+                <button className="btn hero-btn">Download Resume</button>
+              </a>
 
               <button
                 className="btn hero-btn"
@@ -49,7 +54,11 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="social-media">
+            <div
+              className="social-media"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               <a
                 href="https://github.com/Chesta-gaur"
                 target="_blank"

@@ -8,7 +8,7 @@ export const educationData = [
   },
   {
     id: 2,
-    degree: "High School (12th)",
+    degree: "Senior Secondary School (12th)",
     institute: "Dilip Vidhya Niketan Sr. Sec. School, Kota (Raj.)",
     duration: "2020 - 2021",
     grade: "95.20%",

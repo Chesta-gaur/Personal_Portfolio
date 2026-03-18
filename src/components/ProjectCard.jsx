@@ -32,7 +32,7 @@ export default function ProjectCard({ image, name, desc, tech, github, demo }) {
             href={demo}
             rel="noopener noreferrer"
             target="_blank"
-            className="project-btn demo-btn"
+            className={`project-btn demo-btn ${demo === "#" ? "disabled" : ""}`}
           >
             <FiExternalLink />
             Demo

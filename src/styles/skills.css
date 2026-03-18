@@ -22,6 +22,7 @@
 .skill-card {
   padding: 25px;
   max-width: 250px;
+  height: 100%;
   margin: auto;
   background: rgba(30, 41, 59, 0.45);
   backdrop-filter: blur(12px);
@@ -30,6 +31,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .skill-card:hover {
@@ -37,6 +39,7 @@
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.5),
     0 0 18px rgba(59, 130, 246, 0.35);
+  border: 1px solid var(--primary);
 }
 
 .skill-header {
@@ -47,7 +50,10 @@
 }
 
 .skill-header .skill-icon svg {
-  font-size: 40px;
+  font-size: 45px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .skill-header h4 {
@@ -55,6 +61,11 @@
   font-weight: 600;
   color: var(--text-main);
   margin: 0;
+  transition: all 0.2s ease;
+}
+
+.skill-card:hover h4 {
+  color: var(--primary);
 }
 
 .skill-progress {

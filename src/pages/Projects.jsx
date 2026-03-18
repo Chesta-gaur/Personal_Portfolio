@@ -14,8 +14,13 @@ export default function Projects() {
 
         {/* PROJECTS */}
         <div className="row g-4">
-          {projectData.map((project) => (
-            <div className="col-md-4" key={project.id} data-aos="fade-up">
+          {projectData.map((project, index) => (
+            <div
+              className="col-md-4"
+              key={project.id}
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
+            >
               <ProjectCard
                 image={project.image}
                 name={project.name}

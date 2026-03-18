@@ -6,7 +6,11 @@ export default function EducationItem({
   index,
 }) {
   return (
-    <div className={`education-item ${index % 2 === 0 ? "left" : "right"}`}>
+    <div
+      className={`education-item ${index % 2 === 0 ? "left" : "right"}`}
+      data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+      data-aos-delay={index * 150}
+    >
       <div className="timeline-dot"></div>
       <div className="edu-card">
         <h4 className="degree">{degree}</h4>

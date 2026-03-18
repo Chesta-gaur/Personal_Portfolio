@@ -15,7 +15,7 @@ export default function App() {
     AOS.init({
       duration: 800,
       once: true,
-      offset: 100,
+      offset: 150,
     });
   }, []);
 

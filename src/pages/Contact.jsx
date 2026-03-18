@@ -4,7 +4,7 @@ import ContactInfo from "../components/ContactInfo";
 
 export default function Contact() {
   return (
-    <section id="contact" className="contact-section" data-aos="fadeup">
+    <section id="contact" className="contact-section">
       <div className="container">
         {/* SECTION TITLE */}
         <div className="title-box">

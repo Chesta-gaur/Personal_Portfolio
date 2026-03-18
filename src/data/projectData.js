@@ -27,7 +27,7 @@ export const projectData = [
   {
     id: 3,
     image: virtualAssistant,
-    name: "NOVA - Virtual Assistant ",
+    name: "NOVA - Virtual Assistant",
     desc: "AI-powered assistant for handling queries and automation tasks.",
     tech: ["Python", "OpenAI API", "Automation"],
     github:

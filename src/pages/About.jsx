@@ -18,11 +18,11 @@ export default function About() {
         <div className="intro-para" data-aos="fade-up">
           <p>
             I am a Computer Science Engineering graduate passionate about
-            backend development and building scalable applications. I enjoy
-            designing efficient REST APIs using Python and FastAPI while
-            continuously expanding my frontend skills with React. My focus is on
-            writing clean, maintainable code and solving real-world problems
-            through practical software solutions.
+            building scalable backend systems and modern web applications. I
+            specialize in designing efficient REST APIs using Python and
+            FastAPI, while continuously enhancing my frontend skills with React.
+            I focus on clean architecture, maintainable code, and solving
+            real-world problems.
           </p>
         </div>
 
@@ -30,19 +30,28 @@ export default function About() {
           {/* LEFT CONTENT */}
           <div className="col-md-6" data-aos="fade-left">
             {aboutFeatures.map((feature, index) => (
-              <FeatureCard
-                key={index}
-                icon={feature.icon}
-                title={feature.title}
-                description={feature.description}
-              />
+              <div
+                key={feature.id}
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
+              >
+                <FeatureCard
+                  icon={feature.icon}
+                  title={feature.title}
+                  description={feature.description}
+                />
+              </div>
             ))}
           </div>
           {/* RIGHT CONTENT */}
-          <div className="col-md-6">
+          <div className="col-md-6" data-aos="fade-right">
             <div className="about-info-circles">
-              {infoData.map((item, index) => (
-                <InfoCircle key={index} title={item.title} value={item.value} />
+              {infoData.map((item) => (
+                <InfoCircle
+                  key={item.id}
+                  title={item.title}
+                  value={item.value}
+                />
               ))}
             </div>
           </div>

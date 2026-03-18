@@ -9,6 +9,7 @@ export default function SkillCard({ icon, name, proficiency }) {
       ([entry]) => {
         if (entry.isIntersecting) {
           setWidth(proficiency);
+          observer.unobserve(entry.target); //stops observing after trigger
         }
       },
       { threshold: 0.4 },

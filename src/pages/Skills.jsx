@@ -9,16 +9,17 @@ export default function Skills() {
         {/* SECTION TITLE */}
         <div className="title-box">
           <p className="subtitle">- tech stack -</p>
-          <h2 className="title">Technologies I Work With</h2>
+          <h2 className="title">Technologies & Tools I Use</h2>
         </div>
 
         {/* SKILLS */}
         <div className="row g-4">
-          {aboutSkills.map((skill) => (
+          {aboutSkills.map((skill, index) => (
             <div
               className="col-sm-6 col-md-4 col-lg-3"
               key={skill.id}
               data-aos="zoom-in"
+              data-aos-delay={index * 100}
             >
               <SkillCard
                 icon={skill.icon}
