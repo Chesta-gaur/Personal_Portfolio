@@ -26,6 +26,7 @@
 .floating-navbar .nav-link {
   font-weight: 600;
   padding: 6px 10px;
+  margin: 0 10px;
   font-size: 18px;
   position: relative;
   color: var(--text-secondary);
