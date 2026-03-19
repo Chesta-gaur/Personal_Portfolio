@@ -4,3 +4,9 @@
   text-align: center;
   color: var(--text-main);
 }
+
+@media (max-width: 576px) {
+  .footer {
+    font-size: 12px;
+  }
+}

@@ -5,8 +5,9 @@
 .skill-section::before {
   content: "";
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 80%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
   background: radial-gradient(
     circle,
     rgba(99, 102, 241, 0.15),
@@ -21,7 +22,7 @@
 
 .skill-card {
   padding: 25px;
-  max-width: 250px;
+  width: 100%;
   height: 100%;
   margin: auto;
   background: rgba(30, 41, 59, 0.45);
@@ -96,4 +97,28 @@
   border-radius: 15px;
   background: linear-gradient(90deg, #3b82f6, #6366f1, #8b5cf6);
   transition: width 1.2s ease;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .skill-section::before {
+    width: 100%;
+    max-width: 300px;
+    filter: blur(40px);
+  }
+}
+
+@media (max-width: 576px) {
+  .skill-header .skill-icon svg {
+    font-size: 35px;
+    padding: 8px;
+  }
+
+  .skill-header h4 {
+    font-size: 15px;
+  }
+
+  .skill-card {
+    padding: 18px;
+  }
 }

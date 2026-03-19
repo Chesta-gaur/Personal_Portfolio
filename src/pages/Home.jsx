@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <section id="home" className="home-section">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row align-items-center ">
           {/* LEFT CONTENT (SHORT INTRO) */}
 
           <div className="hero-left col-md-6">

@@ -1,9 +1,18 @@
 import { SiGithub } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 
-export default function ProjectCard({ image, name, desc, tech, github, demo }) {
+export default function ProjectCard({
+  image,
+  name,
+  desc,
+  tech,
+  github,
+  demo,
+  aos,
+  delay,
+}) {
   return (
-    <div className="project-card">
+    <div className="project-card" data-aos={aos} data-aos-delay={delay}>
       <div className="project-img">
         <img src={image} alt={name} />
       </div>

@@ -13,23 +13,19 @@ export default function Projects() {
         </div>
 
         {/* PROJECTS */}
-        <div className="row g-4">
+        <div className="projects-grid">
           {projectData.map((project, index) => (
-            <div
-              className="col-md-4"
+            <ProjectCard
               key={project.id}
-              data-aos="fade-up"
-              data-aos-delay={index * 200}
-            >
-              <ProjectCard
-                image={project.image}
-                name={project.name}
-                desc={project.desc}
-                tech={project.tech}
-                github={project.github}
-                demo={project.demo}
-              />
-            </div>
+              aos="fade-up"
+              delay={index * 200}
+              image={project.image}
+              name={project.name}
+              desc={project.desc}
+              tech={project.tech}
+              github={project.github}
+              demo={project.demo}
+            />
           ))}
         </div>
       </div>

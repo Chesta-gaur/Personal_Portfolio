@@ -159,24 +159,74 @@
   color: var(--text-secondary);
 }
 
-/* DIAMOND POSITIONING */
-.info-circle:nth-child(1) {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+/* DIAMOND POSITIONING ONLY FOR DESKTOP*/
+@media (min-width: 769px) {
+  .info-circle:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .info-circle:nth-child(2) {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .info-circle:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .info-circle:nth-child(4) {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
-.info-circle:nth-child(2) {
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
+/* intro para */
+@media (max-width: 768px) {
+  .intro-para {
+    padding: 0 10px;
+  }
+
+  .intro-para p {
+    font-size: 14px;
+  }
+
+  .row {
+    row-gap: 10px;
+  }
 }
-.info-circle:nth-child(3) {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+
+/* responsiveness for feature card */
+@media (max-width: 768px) {
+  .feature-card {
+    padding: 16px;
+  }
+
+  .feature-content h4 {
+    font-size: 16px;
+  }
+
+  .feature-content p {
+    font-size: 13px;
+  }
 }
-.info-circle:nth-child(4) {
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
+/* responsiveness for infor circles */
+@media (max-width: 768px) {
+  .about-info-circles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .info-circle {
+    position: static;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    transform: none !important;
+  }
 }

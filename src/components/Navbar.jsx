@@ -32,9 +32,22 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!e.target.closest(".navbar")) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark floating-navbar">
-      <div className="container">
+      <div className="w-100 d-flex align-items-center justify-content-between ">
         <a className="logo" href="#home">
           CG
         </a>
@@ -42,19 +55,26 @@ export default function Navbar() {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          onClick={() => setIsOpen(!isOpen)}
         >
-          <span className="navbar-toggler-icon"></span>
+          <div className="hamburger">
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
+          </div>
         </button>
 
         {/* nav links */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div
+          className={`navbar-collapse ${isOpen ? "show" : "collapse"}`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
               <a
                 className={`nav-link ${active === "home" ? "active" : ""}`}
                 href="#home"
+                onClick={() => setIsOpen(false)}
               >
                 Home
               </a>
@@ -63,6 +83,7 @@ export default function Navbar() {
               <a
                 className={`nav-link ${active === "about" ? "active" : ""}`}
                 href="#about"
+                onClick={() => setIsOpen(false)}
               >
                 About
               </a>
@@ -71,6 +92,7 @@ export default function Navbar() {
               <a
                 className={`nav-link ${active === "skills" ? "active" : ""}`}
                 href="#skills"
+                onClick={() => setIsOpen(false)}
               >
                 Skills
               </a>
@@ -79,6 +101,7 @@ export default function Navbar() {
               <a
                 className={`nav-link ${active === "education" ? "active" : ""}`}
                 href="#education"
+                onClick={() => setIsOpen(false)}
               >
                 Education
               </a>
@@ -87,14 +110,19 @@ export default function Navbar() {
               <a
                 className={`nav-link ${active === "projects" ? "active" : ""}`}
                 href="#projects"
+                onClick={() => setIsOpen(false)}
               >
                 Projects
               </a>
             </li>
           </ul>
 
-          <a className="btn hire-btn" href="#contact">
-            Let's Connect
+          <a
+            className="btn hire-btn"
+            href="#contact"
+            onClick={() => setIsOpen(false)}
+          >
+            Hire Me
           </a>
         </div>
       </div>

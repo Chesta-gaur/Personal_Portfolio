@@ -5,9 +5,10 @@ export default function EducationItem({
   grade,
   index,
 }) {
+  const side = index % 2 === 0 ? "left" : "right";
   return (
     <div
-      className={`education-item ${index % 2 === 0 ? "left" : "right"}`}
+      className={`education-item ${side}`}
       data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
       data-aos-delay={index * 150}
     >
