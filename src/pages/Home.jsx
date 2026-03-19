@@ -57,7 +57,7 @@ export default function Home() {
             <div
               className="social-media"
               data-aos="fade-up"
-              data-aos-delay="600"
+              data-aos-delay="500"
             >
               <a
                 href="https://github.com/Chesta-gaur"

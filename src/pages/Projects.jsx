@@ -18,7 +18,7 @@ export default function Projects() {
             <ProjectCard
               key={project.id}
               aos="fade-up"
-              delay={index * 200}
+              delay={index * 150}
               image={project.image}
               name={project.name}
               desc={project.desc}
